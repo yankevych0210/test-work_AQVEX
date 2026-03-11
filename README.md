@@ -13,7 +13,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone <url-вашего-репозитория>
+   git clone https://github.com/yankevych0210/test-work_AQVEX.git
    cd aqvex-catalog
    ```
 2. Установите зависимости:
