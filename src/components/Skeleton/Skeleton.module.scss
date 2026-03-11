@@ -1,0 +1,72 @@
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@mixin skeleton-line {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.5s infinite ease-in-out;
+  border-radius: 4px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1;
+  @include skeleton-line;
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  width: 60%;
+  height: 20px;
+  @include skeleton-line;
+}
+
+.title {
+  width: 100%;
+  height: 14px;
+  @include skeleton-line;
+}
+
+.titleShort {
+  width: 70%;
+  height: 14px;
+  @include skeleton-line;
+}
+
+.stars {
+  width: 40%;
+  height: 14px;
+  @include skeleton-line;
+}
+
+.tags {
+  width: 55%;
+  height: 14px;
+  @include skeleton-line;
+}
+
+.actions {
+  width: 100%;
+  height: 38px;
+  margin-top: 4px;
+  @include skeleton-line;
+  border-radius: 8px;
+}
